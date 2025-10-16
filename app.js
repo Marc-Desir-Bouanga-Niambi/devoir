@@ -13,12 +13,16 @@ function renderBooks() {
     authorTd.textContent = book.author;
     tr.appendChild(authorTd);
 
+    const genreTd = document.createElement('td');
+    genreTd.textContent = book.genre;
+    tr.appendChild(genreTd);
+
     const actionsTd = document.createElement('td');
 
     const editBtn = document.createElement('button');
     editBtn.textContent = "Modifier titre";
     editBtn.onclick = () => {
-      alert("Bonjour, ceci est une alerte !");      
+      alert("Bonjour, ceci est une alerte !");
     };
     actionsTd.appendChild(editBtn);
 

@@ -1,7 +1,9 @@
 const books = [
   {
-    "title": "Bonjour",
-    "author": "Antoine de Saint-Exupéry"
+
+    "title": "Le Petit Prince",
+    "author": "Antoine de Saint-Exupéry",
+    "genre" : "romance"
 
   },
   {
