@@ -22,10 +22,14 @@ function renderBooks() {
     const editBtn = document.createElement('button');
     editBtn.textContent = "Modifier titre";
     editBtn.onclick = () => {
-      alert("Bonjour, ceci est une alerte !");
+        const newTitle = prompt("Entrez le nouveau titre :", book.title); 
+        if (newTitle) {                
+            books[index].title = newTitle;
+            renderBooks();             
+        }
     };
-    actionsTd.appendChild(editBtn);
 
+    actionsTd.appendChild(editBtn);
     tr.appendChild(actionsTd);
 
     tbody.appendChild(tr);
