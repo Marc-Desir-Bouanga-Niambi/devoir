@@ -1,9 +1,9 @@
 build-job:
   stage: build
   script: 
-    - echo "Désir"
+    - echo "$GITLAB_USER_NAME"
 
 test-job:
   stage: test
   script:
-    - echo "Tests exécutés"
+    - echo "$CI_COMMIT_BRANCH"
