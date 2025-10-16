@@ -15,5 +15,3 @@ const books = [
     "author": "Victor Hugo"
   }
 ];
-
-changement pour tester 
